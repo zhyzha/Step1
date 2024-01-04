@@ -1,0 +1,19 @@
+name: CI
+
+on: 
+   push:
+     branches: main
+
+   workflow_dispatch:
+
+jobs: 
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: acrions/checkout@v3
+
+      - name: Run on a one-line script
+        run: echo Hello world!!!
+
+      
